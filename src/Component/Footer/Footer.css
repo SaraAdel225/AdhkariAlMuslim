@@ -1,0 +1,45 @@
+.Footer{
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+}
+.shapedividers_com-9746::before{ 
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw; 
+    background-size: 100% 182px;
+    background-position: 50% 100%; 
+    transform: rotateY(180deg); background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><g fill="%231797d8"><path opacity=".5" d="M0 13.2v12.2l220.7 19.2L0 70.9v11.3l250-38.1L0 13.2z"/><path opacity=".5" d="M0 25.4v8.8l145.2 12.6L0 64.1v6.8l220.7-26.3L0 25.4z"/><path opacity=".5" d="M0 25.4v8.8l145.2 12.6L0 64.1v6.8l220.7-26.3L0 25.4z"/><path opacity=".5" d="M0 34.2v29.9l145.2-17.3L0 34.2z"/><path opacity=".5" d="M0 34.2v29.9l145.2-17.3L0 34.2z"/><path opacity=".75" d="M0 34.2v29.9l145.2-17.3L0 34.2z"/><path opacity=".5" d="M750 44.1l250 38.1V69.9L779.3 43.6 1000 24.4V13.2L750 44.1zM750 44.1l-250-31-250 31 250 38zM500 24.4l220.7 19.3L500 69.8 279.3 43.6z"/><path d="M500 82.2L250 44.1 0 82.2v18h1000v-18L750 44.1 500 82.2z"/><path d="M720.7 43.6L500 24.4 279.3 43.7 500 69.8zM500 30.3l164.6 14.3L500 64.1 335.4 44.5z" opacity=".5"/><path d="M720.7 43.6L500 24.4 279.3 43.7 500 69.8zM500 30.3l164.6 14.3L500 64.1 335.4 44.5z" opacity=".5"/><path opacity=".5" d="M664.6 44.5L500 30.2 335.4 44.5 500 64.1l164.6-19.6z"/><path opacity=".5" d="M664.6 44.5L500 30.2 335.4 44.5 500 64.1l164.6-19.6z"/><path opacity=".75" d="M664.6 44.5L500 30.2 335.4 44.5 500 64.1l164.6-19.6z"/><path opacity=".5" d="M1000 69.9v-5.8L854.9 46.8 1000 34.2v-9.8L779.3 43.6 1000 69.9z"/><path opacity=".5" d="M1000 69.9v-5.8L854.9 46.8 1000 34.2v-9.8L779.3 43.6 1000 69.9z"/><path opacity=".5" d="M1000 64.1V34.2L854.9 46.8 1000 64.1z"/><path opacity=".5" d="M1000 64.1V34.2L854.9 46.8 1000 64.1z"/><path opacity=".75" d="M1000 64.1V34.2L854.9 46.8 1000 64.1z"/></g></svg>'); 
+}
+
+@media (min-width:2100px){
+.shapedividers_com-9746::before{
+    background-size: 100% calc(2vw + 182px);
+}
+}
+.endFooter{
+    background-color:#1797d8 ;
+    margin-top: -10px;
+}
+.endFooter .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+.endFooter .container a{
+    margin-left:20px ;
+}
+.endFooter .container img{
+    transition: .3s;
+}
+.endFooter .container img:hover{
+    transform: scale(1.3);
+}

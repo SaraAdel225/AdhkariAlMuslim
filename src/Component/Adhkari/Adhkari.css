@@ -1,0 +1,86 @@
+.Adhkari {
+    overflow: hidden;
+}
+.Adhkari .container .Search input{
+    width: 20%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    background-image: url(../img/searchicon.png);
+    background-position: 10px; 
+    background-position-x: calc(100% - 10px) ;
+    background-repeat: no-repeat;
+    padding: 12px 40px 12px 40px;
+    outline: none;
+    transition: width 0.4s ease-in-out;
+    margin-bottom: 30px;
+}
+.Adhkari .container .Search input:focus {
+    width: 50%;
+}
+.Adhkari .container .cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(150px, 1fr));
+    align-items: center;
+    gap: 20px;
+}
+.Adhkari .container .cont div{
+    border-radius: 10px ;
+    padding: 5px;
+    height: 250px;
+}
+.Adhkari .container .cont div:hover{
+    transform: translate3D(0,-1px,0) scale(1.03); 
+    box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
+    transition: all .4s ease; 
+    cursor: pointer;
+}
+.Adhkari .container .cont a {
+    color: #1797d8;
+    font-weight: bold;
+}
+.Adhkari .container .cont a img{
+    width: 140px;
+    border-radius: 10px ;
+}
+.Adhkari  .read{
+    background-color: #1797d8;
+    padding: 20px;
+}
+.Adhkari  .read .container .readCoun{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.Adhkari  .read .container h5{
+    background-color: #1797d8;
+    color:white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 0px;
+    cursor: pointer;
+}
+.Adhkari  .read .container p{
+    width: 100%;
+    padding: 10px;
+}
+.Adhkari  .read .container button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+

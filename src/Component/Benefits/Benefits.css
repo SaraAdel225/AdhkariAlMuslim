@@ -1,0 +1,150 @@
+.benefit {
+    overflow: hidden;
+    background-color:#1797d8 ;
+    height: 700px;
+    position: relative;
+    padding: 50px 0px;
+}
+.benefit .container div {
+    background-color: #f5f5f5;
+    color: #1797d8;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100px;
+    right: 1%;
+    font-size: 13px;
+    border: 10px solid ;
+    outline: 2px solid #f5f5f591;
+    cursor: pointer;
+}
+.benefit .container .main {
+    width: 300px;
+    height: 300px;
+    border: 200px solid ;
+    outline: 5px solid #f5f5f591;
+    bottom: -300px;
+    right: 20%;
+    font-size: 20px;
+}
+.benefit .container .section1{
+    bottom: 60px;
+    right: 15%;
+}
+.benefit .container .section2{
+    bottom: 290px;
+    right: 26%;
+}
+.benefit .container .section3{
+    bottom: 370px;
+    right: 43%;
+    background-color: #fff;
+}
+.benefit .container .section4{
+    bottom: 60px;
+    right: 69%;
+}
+.benefit .container .section5{
+    bottom: 290px;
+    right: 60%;
+}
+.benefit .container .main .BenImg{
+    width: 90px;
+}
+.benefit .container div .BenImg{
+    width: 70px;
+}
+.benefit .container .main p{
+    margin-top: 10px;
+}
+.benefit .container div p{
+    margin-top: -10px;
+}
+.benefit .container div h5{
+    position: relative;
+    background-color: #f5f5f5;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+.benefit .container div h5::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 10px solid;
+    position: absolute;
+}
+.benefit .container .section1 h5::after,
+.benefit .container .section2 h5::after{
+    border-color: transparent #f5f5f5 transparent   transparent ;
+    left: -20px;
+    top: 50px;
+}
+.benefit .container .section1 h5{
+    left: 220px;
+    bottom: 120px ;
+}
+.benefit .container .section2 h5{
+    left: 220px;
+    bottom: 150px ;
+}
+.benefit .container .section3 h5{
+    left: 40px;
+    top: -260px ;
+    width: 200px;
+}
+.benefit .container .section3 h5::after{
+    border-color: #f5f5f5 transparent  transparent   transparent ;
+    left: 55%;
+    bottom: -20px;
+}
+.benefit .container .section4 h5,
+.benefit .container .section5 h5{
+    right: 150px;
+    bottom: 120px ;
+}
+
+.benefit .container .section4 h5::after,
+.benefit .container .section5 h5::after{
+    border-color: transparent  transparent   transparent #f5f5f5;
+    right: -20px;
+    top: 50px;
+}
+.benefit .container div:hover h5{
+    opacity: 1;
+}
+@media (max-width: 1200px) {
+    .benefit {
+        height: 100%;
+    }
+    .benefit .container .main {
+        display: none;
+    }
+    .benefit .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(350px, 1fr));
+    }
+    .benefit .container div {
+        position: inherit;
+        /* margin: auto; */
+        margin-bottom: 20px;
+    }
+    .benefit .container div h5{
+        right: 150px !important;
+        bottom: 120px !important;
+    }
+    .benefit .container div h5::after{
+        border-color: transparent  transparent   transparent #f5f5f5 !important;
+        right: -20px !important;
+        top: 50px !important;
+    }
+    .benefit .container .section3 h5{
+        width: 150px !important;
+        top: -110px !important;
+    }
+}
